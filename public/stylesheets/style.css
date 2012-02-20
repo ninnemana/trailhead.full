@@ -218,9 +218,42 @@ td { vertical-align: top; }
    Author:
    ========================================================================== */
 
-html{ margin:0;padding:0; }
-body{ min-width: 1020px; margin:auto;padding:0; min-height:800px;}
-body div[role=main]{ background:white; box-shadow: 4px 4px 4px #ccc;min-height:800px;}
+html{ margin:0;padding:0;background:url('/images/bright_squares.png'); }
+div.outer_container{
+	width: 1020px;
+	background:#7a3957;
+	padding:5px 5px;
+	margin:auto;
+	margin-top: 10px;
+	box-shadow: 0px -2px 4px #000;
+	transform: rotate(0.4deg);
+	-webkit-transform: rotate(0.4deg);
+	-moz-transform:rotate(0.4deg);
+	-o-transform:rotate(0.4deg);
+}
+
+div.inner_container{
+	width:1000px;
+	margin:auto;
+	padding: 5px 5px;
+	background:#87814C;
+	box-shadow: 0px -2px 4px #000;
+	transform: rotate(-0.75deg);
+	-moz-transform: rotate(-0.75deg);
+	-o-transform:rotate(-0.75deg);
+	-webkit-transform: rotate(-0.75deg);
+}
+
+div.tighten_up{
+	transform: rotate(0.45deg);
+	-webkit-transform:rotate(0.45deg);
+	-moz-transform:rotate(0.45deg);
+	-o-transform:rotate(0.45deg);
+	width: 990px;
+	margin:auto;
+}
+
+div[role=main]{ background:white; min-height:800px;}
 
 header{ padding: 30px 30px 0px 30px; background:#f7f7f7; border-bottom: 1px ridge #ccc; }
 header a.logo{ float:left; margin-bottom: 10px; }
